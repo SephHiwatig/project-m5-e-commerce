@@ -4,6 +4,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PaymentModal from "../Payment/PaymentModal";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleModal } from "../../Actions";
+import { THEME } from "../Style/Theme";
 
 // Styles
 import styled from "styled-components";
@@ -51,6 +52,10 @@ const CartBtn = styled.button`
 
   &:active {
     transform: scale(1.2);
+  }
+
+  @media (max-width: ${THEME.mobile}) {
+    padding-top: 15px;
   }
 `;
 

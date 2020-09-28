@@ -78,7 +78,6 @@ const ItemList = () => {
           </ViewMore>
         </ListFooter>
       )}
-
     </Wrapper>
   );
 };

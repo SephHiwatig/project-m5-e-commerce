@@ -52,7 +52,7 @@ const Carousel = ({ category }) => {
         SetPhotoArray(petsArray);
         break;
       default:
-        return category
+        return category;
     }
   }, [category]);
 
@@ -89,23 +89,21 @@ const Image = styled.img`
   width: 100%;
   object-position: 0px 0px;
 
-  @media (min-width: 500px) {
-    object-position: 0px -200px;
-  }
   @media (min-width: 768px) {
-    object-position: 0px -400px;
+    object-position: 0px -80px;
   }
+
   @media (min-width: 1080px) {
-    object-position: 0px -500px;
+    object-position: 0px -150px;
   }
   @media (min-width: 1280px) {
-    object-position: 0px -300px;
+    object-position: 0px -250px;
   }
   @media (min-width: 1440px) {
-    object-position: 0px -900px;
+    object-position: 0px -350px;
   }
   @media (min-width: 1840px) {
-    object-position: 0px -1700px;
+    object-position: 0px -450px;
   }
 `;
 

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     * {
@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
     p {
         font-size: 16px;
     }
+
+    .active {
+  display: block;
+}
 `;
 
 export default GlobalStyles;

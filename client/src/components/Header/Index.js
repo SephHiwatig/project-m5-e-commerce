@@ -9,12 +9,23 @@ import { THEME } from "../Style/Theme";
 import CartIcon from "./CartIcon";
 import SearchBar from "./SearchBar";
 import Logo from "./Logo";
+import NavDropdown from "../NavDropDown";
+
+const categories = [
+  "lifestyle",
+  "fitness",
+  "medical",
+  "entertainment",
+  "industrial",
+  "pets and animals",
+];
 
 const Header = () => {
+  const [category, SetCategory] = React.useState("lifestyle");
   return (
     <Wrapper>
       <Top>
-        {/* <NavDropdown /> */}
+        <NavDropdown categories={categories} SetCategory={SetCategory} />
         <Logo />
         <SearchBarDesktop>
           <SearchBar />
